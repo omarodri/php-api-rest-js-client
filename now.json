@@ -18,14 +18,13 @@
             "status": 404
         }
     ],
-    "name": "omar-api-rest",
-    "builds": [{
-            "src": "*.php",
-            "use": "@now/php"
+    "functions": {
+        "router.php": {
+            "runtime": "now-php@0.0.10"
         },
-        {
-            "src": "*.html",
-            "use": "@now/static"
+        "index.html": {
+            "runtime": "now-static"
         }
-    ]
+
+    }
 }
